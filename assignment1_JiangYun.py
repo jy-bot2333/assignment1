@@ -17,7 +17,7 @@ COLORS = ["red", "orange", "yellow", "green", "cyan", "blue", "magenta"]
 
 # ---------------- Helper ----------------
 def move_to(x, y, heading=0):
-    """Jump to a position without drawing a line."""
+
     t.penup()
     t.goto(x, y)
     t.setheading(heading)
@@ -57,7 +57,7 @@ def draw_rainbow_spiral(turns=36):
         for _ in range(4):                 # draw one square
             t.forward(side)
             t.left(90)
-        t.left(10)                         # rotate before next square
+        t.left(10)
 
 
 # ---------------- Main drawing ----------------
@@ -78,7 +78,7 @@ screen.exitonclick()   # click the window to close
 
 
 
-
+#==========================================
 #----------------QA Bot-------------------
 print("=" * 50)
 print("   HKU QA Bot   (type 'bye' to exit)")
@@ -129,6 +129,8 @@ while True:                                   # keep the conversation going
               "Try asking about HKU, robot, jetson, ai or human.")
 
 
+
+#========================================
 #====================================simple calculator
 def get_number(prompt):
     """Keep asking until the user types a valid number."""
